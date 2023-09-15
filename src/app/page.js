@@ -7,6 +7,7 @@ import Testimonials from '@/components/testimonials'
 import Footer from '@/components/footer'
 import Partners from '@/components/partners'
 import CarouselSlider from '@/components/newcarousel'
+import Features from '@/components/features'
 
 export default function Home() {
   return (
@@ -15,13 +16,14 @@ export default function Home() {
         <Header />
         <Hero />
       </div>
-      <div className="bg-[#000212] w-full h-[1100px]">
+      <div className="bg-[#000212] flex w-full h-[1100px]">
         <CarouselSlider />
       </div>
 
       <Invite />
       <Testimonials />
       <Partners />
+      <Features />
       <Footer />
     </main>
   );
