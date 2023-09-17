@@ -1,13 +1,14 @@
 import Image from 'next/image'
 import Header from '@/components/header'
 import Hero from '@/components/hero'
-import Carousel from '@/components/carousel'
+// import Carousel from '@/components/carousel'
 import Invite from '@/components/invite'
 import Testimonials from '@/components/testimonials'
 import Footer from '@/components/footer'
 import Partners from '@/components/partners'
-import CarouselSlider from '@/components/newcarousel'
-import Features from '@/components/features'
+import Carousels from '@/components/carousels'
+// import CarouselSlider from '@/components/newcarousel'
+// import Features from '@/components/features'
 
 export default function Home() {
   return (
@@ -17,13 +18,14 @@ export default function Home() {
         <Hero />
       </div>
       <div className="bg-[#000212] flex w-full h-[1100px]">
-        <CarouselSlider />
+        {/* <CarouselSlider /> */}
+        <Carousels/>
       </div>
 
       <Invite />
       <Testimonials />
       <Partners />
-      <Features />
+      {/* <Features /> */}
       <Footer />
     </main>
   );
