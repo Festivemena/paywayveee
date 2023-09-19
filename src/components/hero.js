@@ -1,26 +1,50 @@
-import Image from 'next/image'
+"use client";
+
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import { HeroPic, OneTap, Ui, Logo } from "../../public";
 import { DiApple } from "react-icons/di";
-import { BiLogoPlayStore } from 'react-icons/bi'
+import { BiLogoPlayStore } from "react-icons/bi";
+import TextTransition, { presets } from "react-text-transition";
+
+const TEXTS = [" One Tap.", " One app", " One Solution"];
 
 function CTA() {
+
+  const [index, setIndex] = React.useState(0);
+  React.useEffect(() => {
+    const intervalId = setInterval(
+      () => setIndex((index) => index + 1),
+      4000 // every 6 seconds
+    );
+    return () => clearTimeout(intervalId);
+  }, []);
+
   return (
-    <div className="pt-40 ml-24 w-2/3">
-      <div className="text-black text-[60px] text-center font-bold">
-        Do All With Just One Tap.
+    <div className="pt-40 ml-24 w-full">
+      <div className="text-black text-[60px] w-full text-center font-bold">
+        Do All With
+        <span>
+          <TextTransition
+            className="flex items-center md:items-end justify-center font-bold text-3xl md:text-6xl"
+            springConfig={presets.wobbly}
+          > Just
+            {TEXTS[index % TEXTS.length]}
+          </TextTransition>
+        </span>
       </div>
-      <div className="text-black text-[20px] px-12 ml-7 pt-5 w-[481px]">
+      <div className="text-black text-center text-[20px] px-12 ml-10 pt-5 w-[481px]">
         The card that simplifies payments, tracks attendance, and powers your
         ride with PayWayve platform.
       </div>
-      <div className="ml-6 mt-12">
-        <div className="w-2/3 pl-6">
+      <div className="ml-16 mt-12">
+        <div className="w-2/3 ">
           <div className="text-white bg-[#9A11FF] cursor-pointer w-full text-[20px] h-[62px] ml-6 shadow-2xl font-bold text-center py-4 rounded-md">
             Join PayWayve
           </div>
         </div>
-        <div className="flex mt-5">
-          <div className="text-white pt-1 flex cursor-pointer bg-black w-1/3 h-[62px] ml-6 shadow-2xl rounded-md">
+        <div className="flex w-2/3 ml-6  gap-2 mt-5">
+          <div className="text-white pt-1 flex cursor-pointer bg-black w-1/2 h-[62px]  shadow-2xl rounded-md">
             <div className="flex">
               <DiApple className="w-[48px] h-[48px]" />
             </div>
@@ -29,7 +53,7 @@ function CTA() {
               <div className="text-[14px] font-bold">Apple Store</div>
             </div>
           </div>
-          <div className="text-white pt-1 cursor-pointer flex bg-black w-1/3 h-[62px] ml-6 shadow-2xl rounded-md">
+          <div className="text-white pt-1 cursor-pointer flex bg-black w-1/2 h-[62px]  shadow-2xl rounded-md">
             <div className="flex">
               <BiLogoPlayStore className="w-[48px] h-[48px]" />
             </div>
@@ -54,12 +78,12 @@ function CTA() {
 
 export default function Hero() {
   return (
-    <div className="w-full flex">
-      <div>
+    <div className="w-full h-full flex">
+      <div className="px-24">
         <CTA />
       </div>
-      <div className='-mr-24'>
-        <Image alt='Hero' src={HeroPic} />
+      <div className="ml-[350px]">
+        <Image alt="Hero" src={HeroPic} />
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import { Ijeoma, Justin, Kingsley, Vector2 } from "../../public";
 
 function Individual() {
   return (
-    <div className=" shadow-3xl -mt-[530px] text-black justify-between items-center flex z-20  absolute">
+    <div className=" shadow-3xl -mt-[600px] text-black justify-between items-center flex z-20  absolute">
       <div className="px-20 mr-10 flex">
       <div className="w-1/2 p-4 mr-5  shadow-2xl rounded-lg ">
         <div className="w-full flex">
@@ -53,18 +53,28 @@ function Individual() {
 
 export default function Testimonials() {
     return (
-     <div className="bg-white h-full pb-8 relative w-full h-96">
-      <div className="w-full relative flex">
-      <div className="w-1/2 h-full pt-60 top-0 left-0">
-        <div className="w-full text-center text-[38px] font-bold">Don't Take Our Word For IT</div>
-        <div className="w-ful text-center text-[26px]">Trust Our Customers</div>
+      <div className="bg-white h-full text-black pb-8 relative w-full">
+        <div className="w-full flex">
+          <div className="w-full h-full pt-40 top-0 left-0">
+            <div className="w-full text-center text-[38px] font-bold">
+              Don't Take Our Word For IT
+            </div>
+            <div className="w-full text-center text-[26px]">
+              Trust Our Customers
+            </div>
+          </div>
+          <div className="w-full pt-28 pl-[350px] items-end text-right">
+            <Image
+              className="justify-end items-end"
+              alt="Vector"
+              src={Vector2}
+            />
+          </div>
+        </div>
+        <Individual />
+        <div className="text-[16px] font-bold mt-16 pl-12">
+          All testimonial posts...
+        </div>
       </div>
-      <div className="w-1/2 pt-28  justify-right items-right text-right">
-        <Image alt="Vector" src={Vector2} />
-      </div>
-      </div>
-      <Individual />
-      <div className="text-[16px] font-bold mt-16 pl-12">All testimonial posts...</div>
-     </div>
     );
   }

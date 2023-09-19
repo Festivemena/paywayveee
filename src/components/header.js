@@ -5,21 +5,21 @@ import { HeroPic, OneTap, Ui, Logo } from "../../public";
 
 function Menu () {
   return (
-  <div className="flex w-full text-center text-[16px] space-x-12 justify-center text-[#000212] px-24">
-     <div className="text-[16px] cursor-pointer mr-3">
-      Personal
-     </div>
-     <div className="text-[16px] cursor-pointer mr-3">
-      Business
-     </div>
-     <div className="text-[16px] cursor-pointer mr-3">
-      About
-     </div>
-     <div className="text-[16px] cursor-pointer mr-3">
-      Help
-     </div>
+    <div className="flex w-full text-center text-[16px] space-x-12 justify-center text-[#000212] px-24">
+      <div className="text-[16px]  hover:bg-purple-950 hover:text-white pt-1 rounded-md h-8 w-24  cursor-pointer mr-3">
+        Personal
+      </div>
+      <div className="text-[16px] hover:bg-purple-950 hover:text-white pt-1 rounded-md h-8 w-24 cursor-pointer mr-3">
+        Business
+      </div>
+      <div className="text-[16px] hover:bg-purple-950 hover:text-white pt-1 rounded-md h-8 w-24 cursor-pointer mr-3">
+        About
+      </div>
+      <div className="text-[16px] hover:bg-purple-950 hover:text-white pt-1 rounded-md h-8 w-24 cursor-pointer mr-3">
+        Help
+      </div>
     </div>
-    )
+  );
 }
 
 export default function Header() {

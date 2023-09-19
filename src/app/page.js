@@ -6,26 +6,26 @@ import Invite from '@/components/invite'
 import Testimonials from '@/components/testimonials'
 import Footer from '@/components/footer'
 import Partners from '@/components/partners'
-import Carousels from '@/components/carousels'
-// import CarouselSlider from '@/components/newcarousel'
-// import Features from '@/components/features'
+import CarouselSlider from '@/components/newcarousel'
+import Features from '@/components/features'
 
 export default function Home() {
   return (
     <main className="bg-white pt-4 w-full h-full">
       <div className="px-24">
         <Header />
+      </div>
+      <div className="h-[1000px] pl-20 bg-white">
         <Hero />
       </div>
-      <div className="bg-[#000212] flex w-full h-[1100px]">
-        {/* <CarouselSlider /> */}
-        <Carousels/>
+      <div className="h-[1250px]">
+        <CarouselSlider />
       </div>
 
       <Invite />
       <Testimonials />
       <Partners />
-      {/* <Features /> */}
+      <Features />
       <Footer />
     </main>
   );
