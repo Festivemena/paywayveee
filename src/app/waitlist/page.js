@@ -2,6 +2,25 @@ import Image from 'next/image'
 import Header from '@/components/header'
 import { Logo } from '../../../public'
 
+function Submit(e) { 
+  const formEle = document.querySelector("form"); 
+  const formDatab = new FormData(formEle); 
+  fetch( 
+    "https://script.google.com/macros/s/AKfycbz6new1RrWK13X55Rdr4KZ_VdGUhk9JZQSmOdy_ShvJLKO0vZEIqbnoxDWqyaLbxx4XBg/exec", 
+    { 
+      method: "POST", 
+      body: formDatab, 
+    } 
+  ) 
+    .then((res) => res.json()) 
+    .then((data) => { 
+      console.log(data); 
+    }) 
+    .catch((error) => { 
+      console.log(error); 
+    }); 
+}
+
 export default function Home() {
   return (
     <main className="bg-[#000212F5] pt-4 items-center text-center justify-center flex-1 w-full h-screen">
@@ -18,7 +37,7 @@ export default function Home() {
       <div>
         <div className='text-white mt-12 lg:mt-24'>Join the waitlist</div>
         <input placeholder='Enter your email address' type='text' className='w-1/2 mt-4 lg:mt-12 lg:w-1/3 py-2 pl-2 outline-none border-[#9A11FF] rounded-md border-2' />
-        <input type='submit' className='bg-[#9A11FF] cursor-pointer py-2 px-1' />
+        <input type='submit' onSubmit={Submit()} className='bg-[#9A11FF] cursor-pointer py-2 px-1' />
       </div>
     </main>
   )

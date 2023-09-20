@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image"
+import {BiMenu} from "react-icons/bi"
 import { HeroPic, OneTap, Ui, Logo } from "../../public";
 
 function Menu () {
@@ -44,6 +45,9 @@ export default function Header() {
    <div className="w-[230px] cursor-pointer text-center text-white text-[16px] shadow-xl py-2 px-3 font-bold rounded-[10px] bg-[#9A11FF] h-[37px]">
     Join PayWayve
    </div>
+    </div>
+    <div>
+      <BiMenu />
     </div>
    <div>
 
