@@ -8,16 +8,16 @@ export default function Home() {
       <div className='flex text-center pt-24 w-full items-center justify-center'>
       <Image src={Logo} alt='logo' />
       </div>
-      <div className='text-[48px] pt-16 font-bold text-white' >
+      <div className='text-[24px] lg:text-[48px] pt-16 font-bold text-white' >
         Welcome to Paywayve
       </div>
-      <div  className='text-[18px] px-36 text-white'>
+      <div  className='text-[16px] lg:text-[18px] px-2 lg:px-36 text-white'>
         We at Paywayve believe in bringing seamless business and personal transactions to our customers. Our product is currently being developed and will soon be rolled out.
       </div>
-      <div className='text-[18px] pt-6 text-white'>Enter your email address below to join the waitlist and get notified when we launch the product.</div>
+      <div className='text-[16px] lg:text-[18px] pt-6 text-white'>Enter your email address below to join the waitlist and get notified when we launch the product.</div>
       <div>
-        <div>Join the waitlist</div>
-        <input placeholder='Enter your email address' type='text' className='w-1/3 py-2 pl-2 outline-none border-[#9A11FF] rounded-md border-2' />
+        <div className='text-white mt-12 lg:mt-24'>Join the waitlist</div>
+        <input placeholder='Enter your email address' type='text' className='w-1/2 mt-4 lg:mt-12 lg:w-1/3 py-2 pl-2 outline-none border-[#9A11FF] rounded-md border-2' />
         <input type='submit' className='bg-[#9A11FF] cursor-pointer py-2 px-1' />
       </div>
     </main>
