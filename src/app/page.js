@@ -12,7 +12,7 @@ import Features from '@/components/features'
 export default function Home() {
   return (
     <main className="bg-white pt-4 w-full h-full">
-      <div className="px-24">
+      <div className="px-6 sticky top-0 bg-white w-full z-30 absolute lg:px-24">
         <Header />
       </div>
       <div className="h-[1000px] pl-20 bg-white">

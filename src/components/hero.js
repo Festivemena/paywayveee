@@ -82,7 +82,7 @@ export default function Hero() {
       <div className="px-24">
         <CTA />
       </div>
-      <div className="ml-[350px]">
+      <div className="">
         <Image alt="Hero" src={HeroPic} />
       </div>
     </div>

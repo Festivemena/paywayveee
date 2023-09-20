@@ -1,7 +1,6 @@
 import React from "react";
 import Image from 'next/image'
 import { HeroPic, OneTap, Ui, Logo } from "../../public";
-// import { BSTwitter } from 'react-icons/bs'
 
 function Menu () {
   return (
@@ -24,10 +23,11 @@ function Menu () {
 
 export default function Header() {
   return (
-   <div className="flex px-12 items-center w-full justify-between text-center">
+   <div className="flex px-1 py-1.5 lg:px-12 items-right lg:items-center w-full lg:justify-between lg:text-center">
     <div className="flex cursor-pointer">
         <Image alt="Logo" src={Logo} />
     </div>
+    <div className="hidden lg:flex">
     <Menu />
    <div className="flex text-center px-2 cursor-pointer mr-10">
      SignIn
@@ -35,7 +35,9 @@ export default function Header() {
    <div className="w-[230px] cursor-pointer text-center text-white text-[16px] shadow-xl py-2 px-3 font-bold rounded-[10px] bg-[#9A11FF] h-[37px]">
     Join PayWayve
    </div>
+    </div>
    <div>
+
    </div>
  </div>
   );
