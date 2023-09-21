@@ -46,7 +46,7 @@ export default function Header() {
     Join PayWayve
    </div>
     </div>
-    <div className="">
+    <div className="-mr-36 lg:hidden">
       <BiMenu className="w-12 h-12" />
     </div>
    <div>
