@@ -3,7 +3,7 @@ import { Ijeoma, Justin, Kingsley, Vector2 } from "../../public";
 
 function Individual() {
   return (
-    <div className=" shadow-3xl -mt-[600px] text-black justify-between items-center flex z-20  absolute">
+    <div className=" shadow-3xl -mt-[600px] text-black justify-between items-center flex z-20 ">
       <div className="px-20 mr-10 flex">
       <div className="w-1/2 p-4 mr-5  shadow-2xl rounded-lg ">
         <div className="w-full flex">
