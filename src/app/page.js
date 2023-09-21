@@ -11,8 +11,8 @@ import Features from '@/components/features'
 
 export default function Home() {
   return (
-    <main className="bg-white  pt-4 w-full h-full">
-      <div className="px-24">
+    <main className="bg-white pt-6 w-full h-full">
+      <div className="px-24 sticky  bg-white w-full z-30  ">
         <Header />
       </div>
       <div>
