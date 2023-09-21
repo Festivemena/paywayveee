@@ -11,10 +11,11 @@ import Features from '@/components/features'
 
 export default function Home() {
   return (
-    <main className="bg-white pt-4 w-full h-full">
+    <main className="bg-white  pt-4 w-full h-full">
       <div className="px-24">
         <Header />
       </div>
+      <div>
       <div className="h-[1000px] pl-20 bg-white">
         <Hero />
       </div>
@@ -26,6 +27,7 @@ export default function Home() {
       <Testimonials />
       <Partners />
       <Features />
+      </div>
       <Footer />
     </main>
   );
