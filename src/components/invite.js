@@ -22,5 +22,5 @@ export default function Invite() {
    </div>
      </div>
      </div>
-    );matchMedia,
+    );
   }
