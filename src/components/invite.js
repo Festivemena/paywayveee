@@ -13,9 +13,11 @@ export default function Invite() {
      <div className="text-[38px] -mt-20 text-center px-16 w-full font-semibold">
      The Financial Solution you have been wishing for.
    </div>
+   <Link href="/waitlist">
    <div className='text-white bg-[#9A11FF] w-1/2 h-[62px] cursor-pointer lg:mx-48 ml-32 mt-12 text-[20px] shadow-2xl font-bold text-center py-4 rounded-md'>
           Join PayWayve
         </div>
+        </Link>
    </div>
    <div className="lg:w-1/2 w-full">
      <Image alt="UI" src={Ui} />
