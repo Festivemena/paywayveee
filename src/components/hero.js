@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { HeroPic, OneTap, Ui, Logo } from "../../public";
 import { DiApple } from "react-icons/di";
 import { BiLogoPlayStore } from "react-icons/bi";
@@ -39,9 +40,11 @@ function CTA() {
       </div>
       <div className="pl-24 mt-6 items-center lg:ml-16 lg:mt-12">
         <div className="w-2/3 ">
+        <Link href="/waitlist">
           <div className="text-white bg-[#9A11FF] cursor-pointer w-full text-[20px] h-[62px] ml-6 shadow-2xl font-bold text-center py-4 rounded-md">
             Join PayWayve
           </div>
+          </Link>
         </div>
         <div className="flex w-2/3 ml-6  gap-2 mt-5">
           <div className="text-white pt-1 flex cursor-pointer bg-black w-1/2 h-[42px] lg:h-[62px]  shadow-2xl rounded-md">
