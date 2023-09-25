@@ -57,8 +57,8 @@ function IndividualMobile() {
       <div className="lg:px-20 px-4 flex-1 lg:flex">
       <div className="lg:w-1/2 w-full py-2 px-4 bg-white shadow-2xl rounded-lg ">
         <div className="w-full flex">
-          <Image className="w-24 h-24 lg:w-32 lg:h-32 rounded-full" alt="Ijeoma"  src={Ijeoma} />
-          <div className="flex-1 pl-6 py-4 ">
+          <Image className="w-16 h-16 lg:w-32 lg:h-32 rounded-full" alt="Ijeoma"  src={Ijeoma} />
+          <div className="flex-1 pl-6 py-2">
             <div className="lg:text-[20px] text-[16px] font-bold">Ijeoma Ogiokpe</div>
             <div className="lg:text-[18px] text-[14px]">News caster</div>
           </div>
@@ -71,8 +71,8 @@ function IndividualMobile() {
       <div className="lg:w-1/2 w-full shadow-2xl justify-between rounded-lg flex-1">
         <div className="w-full bg-white mt-1 p-4 h-1\2 rounded-lg">
         <div className="w-full flex">
-          <Image className="w-24 h-24 lg:w-32 lg:h-32 rounded-full" alt="Kingsley" src={Kingsley} />
-          <div className="flex-1 pl-6 py-4 ">
+          <Image className="w-16 h-16 lg:w-32 lg:h-32 rounded-full" alt="Kingsley" src={Kingsley} />
+          <div className="flex-1 pl-6 py-2">
             <div className="lg:text-[20px] text-[16px] font-bold">Kingsley Peters</div>
             <div className="lg:text-[18px] text-[14px]">Chemical Engineer</div>
           </div>
@@ -84,8 +84,8 @@ function IndividualMobile() {
         </div>
         <div className="w-full bg-white mt-1 p-4 h-1\2 rounded-lg">
         <div className="w-full flex">
-          <Image className="w-24 h-24 lg:w-32 lg:h-32 rounded-full" alt="Justin" src={Justin} />
-          <div className="flex-1 pl-6 py-4 ">
+          <Image className="w-16 h-16 lg:w-32 lg:h-32 rounded-full" alt="Justin" src={Justin} />
+          <div className="flex-1 pl-6 py-2 ">
             <div className="lg:text-[20px] text-[16px] font-bold">Justin Oluremi</div>
             <div className="lg:text-[18px] text-[14px]">Student</div>
           </div>
@@ -107,7 +107,7 @@ export default function Testimonials() {
       <div className="bg-white h-full text-black pb-8 relative w-full">
         <div className="w-full flex-1 lg:flex">
           <div className="w-full h-full pt-16 lg:pt-40 lg:top-0 lg:left-0">
-            <div className="w-full text-center text-[38px] font-bold">
+            <div className="w-full text-center text-[24px] lg:text-[38px] font-bold">
               Don&apos;t Take Our Word For IT
             </div>
             <div className="w-full text-center text-[18px] lg:text-[26px]">
