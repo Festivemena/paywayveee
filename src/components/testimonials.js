@@ -53,7 +53,7 @@ function Individual() {
 
 function IndividualMobile() {
   return (
-    <div className=" shadow-3xl lg:-mt-[600px] absolute -mt-[500px] text-black justify-between items-center flex-1 lg:flex z-20 ">
+    <div className=" shadow-3xl lg:-mt-[600px] absolute -mt-[520px] text-black justify-between items-center flex-1 lg:flex z-20 ">
       <div className="lg:px-20 px-4 flex-1 lg:flex">
       <div className="lg:w-1/2 w-full py-2 px-4 bg-white shadow-2xl rounded-lg ">
         <div className="w-full flex">
