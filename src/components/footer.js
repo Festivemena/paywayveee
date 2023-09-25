@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Logo } from "../../public";
 import { DiApple } from "react-icons/di";
 import { BiLogoPlayStore } from 'react-icons/bi'
@@ -78,14 +79,16 @@ export default function Footer() {
             </button>
           </div>
         </div>
-        <div className="flex px-8 lg:px-32 pt-10">
+        <div className="flex px-4 lg:px-32 pt-10">
+          <Link href={"/waitlist"}>
           <div className="w-1/3 ">
-            <button className="text-white bg-[#9A11FF] cursor-pointer w-36 lg:w-80 text-[12px] lg:text-[15px] h-[32px] lg:h-[50px] shadow-2xl font-bold text-center py-2 rounded-md">
+            <button className="text-white bg-[#9A11FF] cursor-pointer w-28 lg:w-80 text-[12px] lg:text-[15px] h-[32px] lg:h-[50px] shadow-2xl font-bold text-center py-2 rounded-md">
               Join PayWayve
             </button>
           </div>
+          </Link>
           <div className="flex justify-center justify-items-center">
-            <div className="text-white ml-2 pt-1 flex cursor-pointer bg-black w-36 lg:w-[152px] h-[36px] lg:h-[50px] shadow-2xl rounded-md">
+            <div className="text-white ml-2 pt-1 flex cursor-pointer bg-black w-28 lg:w-[152px] h-[36px] lg:h-[50px] shadow-2xl rounded-md">
               <div className="pt-1 flex">
                 <DiApple className="lg:w-[48px] py-0.5 w-[28px] h-[28px] lg:h-[48px]" />
               </div>
@@ -94,7 +97,7 @@ export default function Footer() {
                 <div className="text-[11px] font-bold">Apple Store</div>
               </div>
             </div>
-            <div className="text-white ml-2 pt-1 flex cursor-pointer bg-black w-36 lg:w-[152px] h-[36px] lg:h-[50px] shadow-2xl rounded-md">
+            <div className="text-white ml-2 pt-1 flex cursor-pointer bg-black w-28 lg:w-[152px] h-[36px] lg:h-[50px] shadow-2xl rounded-md">
               <div className="flex">
                 <BiLogoPlayStore className="lg:w-[48px] py-0.5 w-[28px] h-[28px] lg:h-[48px]" />
               </div>
