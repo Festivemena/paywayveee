@@ -15,10 +15,10 @@ export default function Invite() {
      The Financial Solution you have been wishing for.
    </div>
    <Link href="/waitlist">
-   <div className='text-white bg-[#9A11FF] w-1/2 h-[62px] cursor-pointer lg:mx-48 ml-32 mt-12 text-[20px] shadow-2xl font-bold text-center py-4 rounded-md'>
+     <div className='text-white bg-[#9A11FF] w-1/2 h-[62px] cursor-pointer lg:mx-48 ml-32 mt-12 text-[20px] shadow-2xl font-bold text-center py-4 rounded-md'>
           Join PayWayve
-        </div>
-        </Link>
+     </div>
+   </Link>
    </div>
    <div className="lg:w-1/2 w-full">
      <Image alt="UI" src={Ui} />
