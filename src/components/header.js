@@ -35,11 +35,11 @@ export default function Header() {
   return (
    <div className="flex px-1 py-1.5 lg:px-12 items-right bg-white lg:items-center w-full justify-between lg:text-center">
     <div className="flex cursor-pointer">
-        <Image alt="Logo" src={Logo} />
+        <Image alt="Logo" className=" w-[120px] " src={Logo} />
     </div>
     <div className="hidden lg:flex">
     <Menu />
-   <div className="flex text-center px-2 cursor-pointer mr-10">
+   <div className="flex text-center px-2 cursor-pointer m r-10">
      SignIn
    </div>
    <div className="w-[230px] cursor-pointer text-center text-white text-[16px] shadow-xl py-2 px-3 font-bold rounded-[10px] bg-[#9A11FF] h-[37px]">
@@ -47,7 +47,7 @@ export default function Header() {
    </div>
     </div>
     <div className="-mr-36 lg:hidden">
-      <BiMenu className="w-12 h-12" />
+      <BiMenu className="w-10 h-10" />
     </div>
    <div>
    </div>

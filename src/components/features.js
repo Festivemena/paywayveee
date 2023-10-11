@@ -5,7 +5,7 @@ export default function Features() {
       <div>
         <div className="bg-[#000212] text-white pt-[60px] text-center rounded-t-[1000px]  w-full h-[1000px]">
           {/* <div className="bg-[#000212] text-white pt-[60px] text-center mb-20 rounded-t-[500px]  w-full h-[900px]"> */}
-            <div className="font-bold pt-40 px-80 text-[38px]">
+            <div className="font-bold pt-40 px-4 lg:px-80 text-[20px] lg:text-[38px]">
               Other noteworthy features you’ll enjoy
             </div>
             <div className="flex pt-4 gap-8 justify-center">
@@ -45,7 +45,7 @@ export default function Features() {
                 </tr>
               </table>
             </div>
-            <div className="px-[400px] pt-14">and Lots more...</div>
+            <div className="lg:px-[400px] px-12 pt-14">and Lots more...</div>
             <div className="w-full items-center justify-center text-center"></div>
           </div>
         </div>

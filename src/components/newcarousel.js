@@ -11,7 +11,7 @@ export default function CarouselSlider() {
 
   return (
     <div className="bg-[#000212] text-white pt-[60px] text-center rounded-t-[50px] -mt-[220px] lg:-mt-[350px] w-full h-[1250px]">
-      <div className="font-bold px-6 text-[30px] lg:px-80 lg:text-[54px]">
+      <div className="font-bold px-6 text-[24px] lg:px-80 lg:text-[54px]">
         Unlike Any Financial Solution You’ve Used Before
       </div>
       <div className="lg:px-[400px] px-3 pt-7">
