@@ -53,7 +53,7 @@ function Individual() {
 
 function IndividualMobile() {
   return (
-    <div className=" shadow-3xl lg:-mt-[600px] absolute -mt-[520px] text-black justify-between items-center flex-1 lg:flex z-20 ">
+    <div className=" shadow-3xl lg:-mt-[600px] absolute -mt-[450px] text-black justify-between items-center flex-1 lg:flex z-20 ">
       <div className="lg:px-20 px-4 flex-1 lg:flex">
       <div className="lg:w-1/2 w-full py-2 px-4 bg-white shadow-2xl rounded-lg ">
         <div className="w-full flex">
@@ -106,7 +106,7 @@ export default function Testimonials() {
     return (
       <div className="bg-white h-full text-black pb-8 relative w-full">
         <div className="w-full flex-1 lg:flex">
-          <div className="w-full h-full pt-16 lg:pt-40 lg:top-0 lg:left-0">
+          <div className="w-full h-full pt-10 lg:pt-40 lg:top-0 lg:left-0">
             <div className="w-full text-center text-[24px] lg:text-[38px] font-bold">
               Don&apos;t Take Our Word For IT
             </div>
