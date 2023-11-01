@@ -55,7 +55,7 @@ export default function Header() {
    </div>
     </div>
       <div className="sidebar">
-      <div className="-mr-[382px] lg:hidden" onClick={toggleSidebar}>
+      <div className="-Pr-[22px] lg:hidden" onClick={toggleSidebar}>
         <BiMenu className="w-10 h-10" />
       </div>
       <ul className={`sidebar-menu ${isOpen ? "absolute bg-[#9A11FF] px-2 py-2 rounded-lg open" : "hidden"}`}>
